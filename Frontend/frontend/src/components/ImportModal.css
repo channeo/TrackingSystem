@@ -1,0 +1,315 @@
+/* ImportModal.css */
+.import-modal .MuiBackdrop-root {
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.modal-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+  max-width: 500px;
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-radius: 16px;
+  padding: 32px;
+  box-shadow: 0 20px 60px rgba(0, 212, 170, 0.3);
+  border: 1px solid rgba(0, 212, 170, 0.2);
+  color: #e0e0e0;
+}
+
+.modal-title {
+  color: #00d4aa !important;
+  font-weight: 700 !important;
+  display: flex !important;
+  align-items: center;
+  gap: 11px;
+  margin-bottom: 24px !important;
+  text-align: center;
+  justify-content: center;
+}
+
+.title-icon {
+  font-size: 28px !important;
+  color: #00d4aa;
+}
+
+.modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.section-title {
+  color: #00d4aa !important;
+  font-weight: 600 !important;
+  margin-bottom: 12px !important;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.file-type-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.file-type-chip {
+  border: 1px solid rgba(0, 212, 170, 0.3) !important;
+  color: #e0e0e0 !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  transition: all 0.3s ease !important;
+  font-weight: 500 !important;
+}
+
+.file-type-chip.active {
+  background: linear-gradient(45deg, #00d4aa, #0099cc) !important;
+  color: white !important;
+  border-color: #00d4aa !important;
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3) !important;
+}
+
+.file-type-chip:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.2) !important;
+}
+
+.upload-area {
+  border: 2px dashed rgba(0, 212, 170, 0.3);
+  border-radius: 12px;
+  padding: 40px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.02);
+  cursor: pointer;
+  position: relative;
+}
+
+.upload-area:hover {
+  border-color: #00d4aa;
+  background: rgba(0, 212, 170, 0.05);
+}
+
+.upload-area.drag-over {
+  border-color: #00d4aa;
+  background: rgba(0, 212, 170, 0.1);
+  transform: scale(1.02);
+}
+
+.upload-area.has-file {
+  border-style: solid;
+  border-color: #00d4aa;
+  background: rgba(0, 212, 170, 0.05);
+  padding: 20px;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.upload-icon {
+  font-size: 48px !important;
+  color: rgba(0, 212, 170, 0.5);
+}
+
+.upload-text {
+  color: #e0e0e0 !important;
+  font-weight: 500 !important;
+}
+
+.browse-link {
+  color: #00d4aa;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.upload-hint {
+  color: #888 !important;
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.file-icon {
+  font-size: 32px !important;
+  color: #00d4aa;
+}
+
+.file-info {
+  flex: 1;
+  text-align: left;
+}
+
+.file-name {
+  color: #e0e0e0 !important;
+  font-weight: 600 !important;
+  margin-bottom: 4px !important;
+}
+
+.file-size {
+  color: #888 !important;
+}
+
+.remove-file-btn {
+  min-width: auto !important;
+  width: 32px !important;
+  height: 32px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 71, 87, 0.1) !important;
+  color: #ff4757 !important;
+  font-size: 18px !important;
+  font-weight: bold !important;
+}
+
+.remove-file-btn:hover {
+  background: rgba(255, 71, 87, 0.2) !important;
+  transform: scale(1.1);
+}
+
+.instructions-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+  border-left: 4px solid #00d4aa;
+}
+
+.instructions-title {
+  color: #00d4aa !important;
+  font-weight: 600 !important;
+  margin-bottom: 8px !important;
+}
+
+.format-examples {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.format-example {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.format-chip {
+  background: rgba(0, 212, 170, 0.1) !important;
+  color: #00d4aa !important;
+  border: 1px solid rgba(0, 212, 170, 0.3) !important;
+  font-weight: 500 !important;
+  min-width: 60px;
+}
+
+.format-text {
+  color: #ccc !important;
+  font-family: 'Courier New', monospace !important;
+}
+
+.progress-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.progress-bar {
+  height: 6px !important;
+  border-radius: 3px;
+  margin-bottom: 8px !important;
+  background: rgba(255, 255, 255, 0.1) !important;
+}
+
+.progress-bar .MuiLinearProgress-bar {
+  background: linear-gradient(45deg, #00d4aa, #0099cc) !important;
+}
+
+.progress-text {
+  color: #00d4aa !important;
+  font-weight: 500 !important;
+  text-align: center;
+  display: block;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.cancel-btn {
+  flex: 1;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: #e0e0e0 !important;
+  font-weight: 500 !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  transition: all 0.3s ease !important;
+}
+
+.cancel-btn:hover {
+  border-color: #ff4757 !important;
+  color: #ff4757 !important;
+  background: rgba(255, 71, 87, 0.1) !important;
+  transform: translateY(-1px);
+}
+
+.import-btn {
+  flex: 2;
+  background: linear-gradient(45deg, #00d4aa, #0099cc) !important;
+  color: white !important;
+  font-weight: 600 !important;
+  padding: 12px !important;
+  border-radius: 8px !important;
+  text-transform: none !important;
+  box-shadow: 0 4px 15px rgba(0, 212, 170, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+.import-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 212, 170, 0.4) !important;
+}
+
+.import-btn:disabled {
+  background: rgba(255, 255, 255, 0.1) !important;
+  color: #888 !important;
+  transform: none !important;
+  box-shadow: none !important;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .modal-container {
+    width: 95%;
+    padding: 24px 16px;
+    margin: 0;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+  }
+  
+  .file-type-buttons {
+    justify-content: center;
+  }
+  
+  .upload-area {
+    padding: 30px 15px;
+  }
+  
+  .upload-area.has-file {
+    padding: 15px;
+  }
+}

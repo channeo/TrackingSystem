@@ -1,0 +1,147 @@
+/* TokenDetail.module.css */
+.container {
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.title {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.metricsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.metricCard {
+  background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.metricCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+}
+
+.metricLabel {
+  color: #d1d5db;
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+  font-family: 'Inter', sans-serif;
+}
+
+.metricValue {
+  color: #ffffff;
+  font-size: 1.3rem;
+  font-weight: 600;
+  font-family: 'Inter', sans-serif;
+}
+
+.profit {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+}
+
+.loss {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%);
+}
+
+.chartSection {
+  margin-bottom: 40px;
+}
+
+.sectionTitle {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.tableContainer {
+  background: #1a1a1a;
+  border-radius: 12px;
+  border: 1px solid #333;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableHeader {
+  background: linear-gradient(135deg, #374151 0%, #4b5563 100%);
+}
+
+.tableHeaderCell {
+  color: #ffffff !important;
+  font-weight: 600 !important;
+  padding: 16px !important;
+  border-bottom: 2px solid #4b5563 !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.tableRow {
+  transition: background-color 0.3s ease;
+  border-bottom: 1px solid #333;
+}
+
+.tableRow:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.tableCell {
+  color: #ffffff !important;
+  padding: 14px 16px !important;
+  border-bottom: 1px solid #333 !important;
+  font-family: 'Inter', sans-serif;
+}
+
+.buyChip {
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.sellChip {
+  background: linear-gradient(135deg, #dc2626 0%, #ef4444 100%) !important;
+  color: white !important;
+  font-weight: 600 !important;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.noData {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  color: #9ca3af;
+  font-size: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}

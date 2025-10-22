@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Wallet {
+  id          Int         @id @default(autoincrement())
+  address     String      @unique
+  transactions Transaction[]
+}
+
+model Transaction {
+  id           Int      @id @default(autoincrement())
+  walletId     Int
+  txHash       String   @unique
+  type         String   // 'buy' or 'sell'
+  token        String
+  amount       Float
+  priceUsd     Float
+  priceSol     Float?   // Optional if SOL conversion needed
+  marketCap    Float
+  timestamp    DateTime
+  wallet       Wallet   @relation(fields: [walletId], references: [id])
+}
